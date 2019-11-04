@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción"
+        android:textSize="20dp"
+        android:id="@+id/descripcion"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Monto"
+        android:textSize="20dp"
+        android:inputType="numberDecimal"
+        android:id="@+id/monto"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Fecha de vencimiento"
+        android:textSize="20dp"
+        android:inputType="date"
+        android:id="@+id/fecha"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pagado:  "
+            android:textSize="20dp"/>
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SI"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:id="@+id/pagado"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Insertar"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:id="@+id/insertar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cargar"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:id="@+id/cargar"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mostrar"
+        android:layout_marginTop="5dp"
+        android:textSize="20dp"
+        android:id="@+id/mostrar"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mostraregistros"
+        android:textSize="20dp"
+        android:layout_marginTop="10dp"
+        android:text="No existen"/>
+
+</LinearLayout>
